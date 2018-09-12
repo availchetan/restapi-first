@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 28.309 s <<< FAILURE! - in TestSuite
+checkContentEncodingValidCity(com.mycompany.app.GetTest)  Time elapsed: 7.019 s  <<< FAILURE!
+java.lang.AssertionError: expected [nginx/1.12.1] but found [nginx/1.14.0]
+	at com.mycompany.app.GetTest.checkContentEncodingValidCity(GetTest.java:147)
+
+registrationSuccessful(com.mycompany.app.PostTest)  Time elapsed: 1.157 s  <<< FAILURE!
+java.lang.AssertionError: expected [201] but found [200]
+	at com.mycompany.app.PostTest.registrationSuccessful(PostTest.java:41)
+

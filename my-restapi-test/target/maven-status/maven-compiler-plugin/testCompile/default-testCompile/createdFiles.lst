@@ -1,0 +1,6 @@
+com\mycompany\app\GetTest.class
+ResponseModels\RegistrationFailureResponse.class
+Utils\StepDefination\Stepdefination.class
+ResponseModels\RegistrationSuccessResponse.class
+com\mycompany\app\PostTest.class
+com\mycompany\app\JsonPathTest.class

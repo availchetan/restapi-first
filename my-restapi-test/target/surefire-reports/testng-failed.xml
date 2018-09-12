@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="Regression Tests(failed)">
+    <classes>
+      <class name="com.mycompany.app.GetTest">
+        <methods>
+          <include name="checkContentEncodingValidCity"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mycompany.app.GetTest -->
+      <class name="com.mycompany.app.PostTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="registrationSuccessful"/>
+        </methods>
+      </class> <!-- com.mycompany.app.PostTest -->
+    </classes>
+  </test> <!-- Regression Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

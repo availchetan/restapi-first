@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="10" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="22118" started-at="2018-09-12T16:19:47Z" finished-at="2018-09-12T16:20:09Z">
+    <groups>
+    </groups>
+    <test name="Regression Tests" duration-ms="22118" started-at="2018-09-12T16:19:47Z" finished-at="2018-09-12T16:20:09Z">
+      <class name="com.mycompany.app.GetTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="setUp" is-config="true" duration-ms="1802" started-at="2018-09-12T21:49:47Z" finished-at="2018-09-12T21:49:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="checkContentEncodingValidCity()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="checkContentEncodingValidCity" duration-ms="6957" started-at="2018-09-12T21:49:48Z" finished-at="2018-09-12T21:49:55Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [nginx/1.12.1] but found [nginx/1.14.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [nginx/1.12.1] but found [nginx/1.14.0]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.mycompany.app.GetTest.checkContentEncodingValidCity(GetTest.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentEncodingValidCity -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="setUp" is-config="true" duration-ms="0" started-at="2018-09-12T21:49:55Z" finished-at="2018-09-12T21:49:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkStatusCodeInvalidCity()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="checkStatusCodeInvalidCity" duration-ms="1456" started-at="2018-09-12T21:49:55Z" finished-at="2018-09-12T21:49:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCodeInvalidCity -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="setUp" is-config="true" duration-ms="0" started-at="2018-09-12T21:49:57Z" finished-at="2018-09-12T21:49:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkStatusCodeValidCity()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="checkStatusCodeValidCity" duration-ms="1269" started-at="2018-09-12T21:49:57Z" finished-at="2018-09-12T21:49:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCodeValidCity -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="setUp" is-config="true" duration-ms="1" started-at="2018-09-12T21:49:58Z" finished-at="2018-09-12T21:49:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="displayAllNodesInWeatherAPI()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="displayAllNodesInWeatherAPI" duration-ms="3436" started-at="2018-09-12T21:49:58Z" finished-at="2018-09-12T21:50:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayAllNodesInWeatherAPI -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="setUp" is-config="true" duration-ms="1" started-at="2018-09-12T21:50:02Z" finished-at="2018-09-12T21:50:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getResponseBodyValidCity()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="getResponseBodyValidCity" duration-ms="1103" started-at="2018-09-12T21:50:02Z" finished-at="2018-09-12T21:50:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponseBodyValidCity -->
+        <test-method status="PASS" signature="getWeatherHeaders()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="getWeatherHeaders" duration-ms="1536" started-at="2018-09-12T21:50:03Z" finished-at="2018-09-12T21:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWeatherHeaders -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="setUp" is-config="true" duration-ms="0" started-at="2018-09-12T21:50:03Z" finished-at="2018-09-12T21:50:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="setUp" is-config="true" duration-ms="1" started-at="2018-09-12T21:50:04Z" finished-at="2018-09-12T21:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="iteratingOverHeaders()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="iteratingOverHeaders" duration-ms="1110" started-at="2018-09-12T21:50:04Z" finished-at="2018-09-12T21:50:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iteratingOverHeaders -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="setUp" is-config="true" duration-ms="1" started-at="2018-09-12T21:50:05Z" finished-at="2018-09-12T21:50:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyCityInJsonResponse()[pri:0, instance:com.mycompany.app.GetTest@6276ae34]" name="verifyCityInJsonResponse" duration-ms="1178" started-at="2018-09-12T21:50:05Z" finished-at="2018-09-12T21:50:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityInJsonResponse -->
+      </class> <!-- com.mycompany.app.GetTest -->
+      <class name="com.mycompany.app.PostTest">
+        <test-method status="FAIL" signature="registrationSuccessful()[pri:0, instance:com.mycompany.app.PostTest@7946e1f4]" name="registrationSuccessful" duration-ms="985" started-at="2018-09-12T21:50:07Z" finished-at="2018-09-12T21:50:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [201] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [201] but found [200]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.mycompany.app.PostTest.registrationSuccessful(PostTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationSuccessful -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mycompany.app.PostTest@7946e1f4]" name="setUp" is-config="true" duration-ms="0" started-at="2018-09-12T21:50:07Z" finished-at="2018-09-12T21:50:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.mycompany.app.PostTest -->
+      <class name="com.mycompany.app.JsonPathTest">
+        <test-method status="PASS" signature="JsonPathUsage()[pri:0, instance:com.mycompany.app.JsonPathTest@3c09711b]" name="JsonPathUsage" duration-ms="1192" started-at="2018-09-12T21:50:08Z" finished-at="2018-09-12T21:50:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JsonPathUsage -->
+      </class> <!-- com.mycompany.app.JsonPathTest -->
+    </test> <!-- Regression Tests -->
+  </suite> <!-- Suite -->
+</testng-results>

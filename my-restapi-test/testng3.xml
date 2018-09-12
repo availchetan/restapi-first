@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+        <listener class-name="Resources.ExtentReporterNG"/>
+     
+    </listeners>
+  <test thread-count="5" name="Regression Tests">
+    <classes>
+      <class name="com.mycompany.app.GetTest"/>
+      <class name="com.mycompany.app.PostTest"/>
+      <class name="com.mycompany.app.JsonPathTest"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
