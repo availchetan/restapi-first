@@ -129,29 +129,7 @@ public class GetTest {
 			}
 		}
 		
-		@Test
-		public void checkContentEncodingValidCity()
-		{
-			
-			RequestSpecification httpRequest = RestAssured.given();
-			Response response = httpRequest.get("/Hyderabad");
-		 
-			// Reader header of a give name. In this line we will get
-			// Header named Content-Type
-			String contentType = response.header("Content-Type");
-			Assert.assertEquals(contentType /* actual value */, "application/json" /* expected value */);
-		 
-			// Reader header of a give name. In this line we will get
-			// Header named Server
-			String serverType =  response.header("Server");
-			Assert.assertEquals(serverType /* actual value */, "nginx/1.12.1" /* expected value */);
-		 
-			// Reader header of a give name. In this line we will get
-			// Header named Content-Encoding
-			String contentEncoding = response.header("Content-Encoding");
-			Assert.assertEquals(contentEncoding /* actual value */, "gzip" /* expected value */);
-		}
-		
+				
 		@Test
 		public void verifyCityInJsonResponse()
 		{
